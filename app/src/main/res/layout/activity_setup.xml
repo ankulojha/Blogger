@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.developinggeek.blogapp.SetupActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/user_default"
+        android:id="@+id/setup_image"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="User Name"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:id="@+id/setup_name"
+        android:layout_below="@+id/setup_image"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setup_user_status"
+        android:layout_below="@+id/setup_name"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:text="User Status Goes here"
+        android:textSize="20sp"
+        />
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/setup_edt_status"
+       android:layout_below="@+id/setup_name"
+       android:layout_marginTop="40dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"
+       android:textColorHint="#FFF">
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint=" Enter new status"
+           android:textColor="#FFF"
+           />
+   </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/setup_btn_img"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setup_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorAccent"
+        android:text="change Status" />
+
+    <Button
+        android:id="@+id/setup_submit_btn"
+        android:layout_width="200dp"
+        android:background="@color/colorAccent"
+        android:text="   Change Display Picture   "
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/setup_btn_img"
+        android:layout_alignStart="@+id/setup_btn_img" />
+
+</RelativeLayout>

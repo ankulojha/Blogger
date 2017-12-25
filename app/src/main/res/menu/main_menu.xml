@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:title="Add Post"
+        android:icon="@drawable/add_icon"
+        app:showAsAction="always"
+        >
+    </item>
+
+    <item
+        android:id="@+id/setting"
+        android:title="setting"
+        app:showAsAction="never"
+        >
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log out"
+        app:showAsAction="never"
+        >
+    </item>
+
+    <item
+        android:id="@+id/favourite"
+        android:title="Favourites"
+        app:showAsAction="never">
+    </item>
+
+</menu>
