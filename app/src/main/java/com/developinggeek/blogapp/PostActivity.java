@@ -37,7 +37,6 @@ public class PostActivity extends AppCompatActivity
     private DatabaseReference mDatabase , mUsersDatabase;
     private FirebaseAuth mAuth;
     private FirebaseUser mCurrentUser;
-    private DatabaseReference mCashDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -54,8 +53,6 @@ public class PostActivity extends AppCompatActivity
         mStorage = FirebaseStorage.getInstance().getReference();
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("Blog");
-
-        mCashDatabase = FirebaseDatabase.getInstance().getReference().child("Loan");
 
         mProgress = new ProgressDialog(this);
 
